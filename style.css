@@ -1309,7 +1309,7 @@ html.dark .footer-logo { color: var(--drose); }
   .home-foot { padding: 16px 10%; }
   #about, #services, .portfolio, .contact { padding-left: 10%; padding-right: 10%; }
   .site-footer { padding: 0 10%; }
-  .portfolio-gallery { grid-template-columns: repeat(5, 1fr); }
+  .portfolio-gallery { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* ════════════════════════════════════════════
