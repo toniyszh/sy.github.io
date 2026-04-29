@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toni Sandra Sy — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <a href="#" class="logo">Toni <em>Sandra</em> Sy</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-header">
+            <a href="https://www.linkedin.com/in/toniyszh/" target="_blank" class="btn-pill-green">
+                <span class="pill-dot"></span> Open to work
+            </a>
+            <button id="theme-toggle-btn" class="header-theme-btn" aria-label="Toggle dark mode" aria-checked="false">
+                <svg id="icon-sun" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg id="icon-moon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                </button>
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== HOME ========== -->
+    <section class="home" id="home">
+        <div class="home-inner">
+
+            <!-- LEFT: identity -->
+            <div class="home-left">
+                <div class="hero-bg-text">TONI</div>
+                <h1 class="home-name">Toni<br><em>Sandra</em> Sy</h1>
+                <div class="home-tags">
+                    <span class="tag">Graphic design</span>
+                    <span class="tag">Branding</span>
+                    <span class="tag">UI / UX</span>
+                    <span class="tag">Typography</span>
+                    <span class="tag">Web dev</span>
+                </div>
+
+                <!-- type animation -->
+                <div class="home-type">
+                    <span class="type-label">Currently —</span>
+                    <span id="typeTarget" class="type-text"></span><span class="cursor" id="cursor"></span>
+                </div>
+
+                <p class="home-bio">Creating visually engaging and user-friendly systems. Specialized in UI/UX, web development, quality assurance, and system deployment including POS and kiosk solutions.</p>
+
+                <div class="home-btns">
+                    <a href="https://www.linkedin.com/in/toniyszh/" target="_blank" class="btn-dark">Let's Connect <i class='bx bx-link-external'></i></a>
+                    <a href="img/ToniSy_Resume2026.pdf" download class="btn-light">
+                        Download CV <i class='bx bx-download'></i>
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://www.instagram.com/tuo.yszh/" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/toniyszh" title="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/hanjeeez" title="Facebook"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+
+            <!-- RIGHT: selected projects preview -->
+            <div class="hero-right">
+                <div class="hero-img-wrap hero-img-entrance">
+                <img src="https://toniyszh.github.io/porfolio.github.io/img/portrait.jpeg" alt="Toni Sandra Sy"/>
+                <div class="hero-badge">Available Now</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer strip -->
+        <div class="home-foot">
+            <span class="home-foot-contact">tonisandra.sy2003@gmail.com · linkedin.com/in/toniyszh · General Trias, Cavite PH</span>
+            <div class="palette-strip">
+                <div class="ps" style="background:#f4c0d1"></div>
+                <div class="ps" style="background:#e8c8b8"></div>
+                <div class="ps" style="background:#f0ebe0"></div>
+                <div class="ps" style="background:#c4a882"></div>
+                <div class="ps" style="background:#8c6d4f"></div>
+                <div class="ps" style="background:#2b2018"></div>
+            </div>
+            <div class="home-stats">
+                <div class="hstat"><div class="hstat-val">20+</div><div class="hstat-key">Projects</div></div>
+                <div class="hstat"><div class="hstat-val">1+</div><div class="hstat-key">Years</div></div>
+                <div class="hstat"><div class="hstat-val">4</div><div class="hstat-key">Skills</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+  <div class="about-left reveal">
+    <div class="section-label">Who I Am</div>
+    <h2 class="section-title">The person <em>behind</em> the work</h2>
+    <div class="section-flower"></div>
+  </div>
+  <div class="about-right">
+    <p class="about-bio reveal reveal-delay-1">
+      Hey, I’m <strong>Toni Sy</strong> — a software engineer and graphic designer building clean, functional, and visually striking digital experiences. I specialize in the space where <strong>design meets code</strong>, crafting pixel-perfect interfaces and developing reliable systems behind the scenes.
+    </p>
+    <p class="about-bio reveal reveal-delay-2">
+      Currently working as a <strong>Junior Software Engineer</strong> at <strong>PartnerSolutions, Co.</strong>, with hands-on experience in POS, kiosk, and web system deployments. I thrive in collaborative environments, working with teams and stakeholders to turn ideas into real, working solutions.
+    </p>
+    <div class="about-grid reveal reveal-delay-2">
+      <div class="about-item">
+        <div class="about-item-label">Location</div>
+        <div class="about-item-value">General Trias, Cavite PH</div>
+      </div>
+      <div class="about-item">
+        <div class="about-item-label">Education</div>
+        <div class="about-item-value">BS Computer Engineering — PCU Manila</div>
+      </div>
+      <div class="about-item">
+        <div class="about-item-label">Current Role</div>
+        <div class="about-item-value">Jr. Software Engineer @ PartnerSolutions</div>
+      </div>
+      <div class="about-item">
+        <div class="about-item-label">Email</div>
+        <div class="about-item-value">tonisandra.sy2003@gmail.com</div>
+      </div>
+    </div>
+    <div class="awards-row reveal reveal-delay-3">
+      <span class="award-tag">🏆 Dean's Lister 2025</span>
+      <span class="award-tag">🎨 Best Design Project — Thesis 2025</span>
+      <span class="award-tag">🎓 PISCES President 2023-2025</span>
+    </div>
+  </div>
+</section>
+
+    <!-- SKILLS -->
+<section id="services">
+  <div class="skills-header">
+    <div class="reveal">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title">My <em>Skills</em></h2>
+    </div>
+  </div>
+  <div class="skills-grid reveal reveal-delay-1">
+    <div class="skill-card">
+      <span class="skill-num">01</span>
+      <span class="skill-icon">◈</span>
+      <div class="skill-name">UI/UX Design</div>
+      <div class="skill-desc">Intuitive, visually engaging user interfaces — from wireframes to final layouts, across web and kiosk systems.</div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-num">02</span>
+      <span class="skill-icon">⌨</span>
+      <div class="skill-name">Web Development</div>
+      <div class="skill-desc">Responsive web apps using Python, PHP, JavaScript, Node.js, and MySQL — clean code, scalable solutions.</div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-num">03</span>
+      <span class="skill-icon">✓</span>
+      <div class="skill-name">QA & Testing</div>
+      <div class="skill-desc">Manual and functional testing, test case creation, and workflow validation for POS, kiosk, and web systems.</div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-num">04</span>
+      <span class="skill-icon">✦</span>
+      <div class="skill-name">Graphic Design</div>
+      <div class="skill-desc">Engaging designs for digital and print — social media graphics, marketing materials, and promotional visuals.</div>
+    </div>
+  </div>
+  <div class="tools-section reveal reveal-delay-2">
+    <div class="tools-title">Tech Tools & Proficiency</div>
+    <div class="tools-list">
+      <div class="tool-item">
+        <div class="tool-name">Canva <span>95%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="95"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-name">Figma <span>90%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-name">VS Code <span>90%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-name">JavaScript <span>70%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="70"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-name">PHP <span>70%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="70"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-name">CSS <span>80%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-name">Adobe PS <span>50%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="50"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-name">Tailwind CSS <span>60%</span></div>
+        <div class="tool-bar"><div class="tool-bar-fill" data-width="60"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-header">
+            <div class="eyebrow">What I've made</div>
+            <h2 class="section-title">My <em>Projects</em></h2>
+        </div>
+
+        <div class="filter-row">
+            <button class="filter-btn active" data-filter="all">All Work</button>
+            <button class="filter-btn" data-filter="web">WebApp</button>
+            <button class="filter-btn" data-filter="poster">Posters</button>
+            <button class="filter-btn" data-filter="logo">Logo</button>
+            <button class="filter-btn" data-filter="banner">Banners</button>
+            <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+        </div>
+
+        <!-- ========== PROJECT CAROUSEL ========== -->
+<div class="project-carousel-wrap">
+    <div class="carousel-scene" id="carouselScene">
+        <button class="p6-nav left" id="p6Prev" aria-label="Previous project">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="p6-nav right" id="p6Next" aria-label="Next project">
+            <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+    </div>
+    <div class="p6-dots" id="p6Dots"></div>
+</div>
+        <!-- ========== FEATURED ========== -->
+        <div class="sect-label">RECENT PROJECTS</div>
+        <div class="portfolio-featured" id="portfolioFeatured">
+
+            <!-- WYW WEB APP -->
+            <div class="pbox web" data-cat="web" data-year="2026">
+    <div class="pbox-carousel">
+        <div class="pbox-slides">
+            <div class="pbox-slide active"><img src="img/portfolio/wyw.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/wyw1.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/wyw2.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/wyw3.png" alt="WebApp Kiosk"></div>
+        </div>
+        <span class="feat-badge">Featured</span>
+        <div class="pbox-dots">
+            <span class="pbox-dot active"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+        </div>
+    </div>
+    <div class="pbox-gallery-group">
+        <a href="img/portfolio/wyw.png"  class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 1"></a>
+        <a href="img/portfolio/wyw1.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 2"></a>
+        <a href="img/portfolio/wyw2.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 3"></a>
+        <a href="img/portfolio/wyw3.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 4"></a>
+    </div>
+    <div class="pbox-info">
+        <div>
+            <div class="pbox-cat">WebApp</div>
+            <div class="pbox-name">WebApp Kiosk</div>
+            <div class="pbox-desc">Designing client-side applications for kiosks</div>
+        </div>
+        <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+
+            <!-- IMB WEB APP -->
+            <div class="pbox web" data-cat="web" data-year="2025">
+    <div class="pbox-carousel">
+        <div class="pbox-slides">
+            <div class="pbox-slide active"><img src="img/portfolio/imb.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/imb1.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/imb2.png" alt="WebApp Kiosk"></div>
+        </div>
+        <span class="feat-badge">Featured</span>
+        <div class="pbox-dots">
+            <span class="pbox-dot active"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+        </div>
+    </div>
+    <div class="pbox-gallery-group">
+        <a href="img/portfolio/imb.png"  class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 1"></a>
+        <a href="img/portfolio/imb1.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 2"></a>
+        <a href="img/portfolio/imb2.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 3"></a>
+    </div>
+    <div class="pbox-info">
+        <div>
+            <div class="pbox-cat">WebApp</div>
+            <div class="pbox-name">Project IMB</div>
+            <div class="pbox-desc">Designing client-side applications for kiosks</div>
+        </div>
+        <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+
+        </div>
+
+        <!-- ========== PORTFOLIO GALLERY ========== -->
+        <div class="sect-label" style="margin-top: 2rem">All projects</div>
+        <div class="portfolio-gallery" id="portfolioGallery">
+
+            <!-- TSURUMARU WEB APP -->
+        <div class="pbox web" data-cat="web" data-year="2025">
+    <div class="pbox-carousel">
+        <div class="pbox-slides">
+            <div class="pbox-slide active"><img src="img/portfolio/ktsuru.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/ktsuru1.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/ktsuru2.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/ktsuru3.png" alt="WebApp Kiosk"></div>
+        </div>
+        <div class="pbox-dots">
+            <span class="pbox-dot active"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+        </div>
+    </div>
+    <div class="pbox-gallery-group">
+        <a href="img/portfolio/ktsuru.png"  class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 1"></a>
+        <a href="img/portfolio/ktsuru1.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 2"></a>
+        <a href="img/portfolio/ktsuru2.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 3"></a>
+        <a href="img/portfolio/ktsuru3.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 4"></a>
+    </div>
+    <div class="pbox-info">
+        <div>
+            <div class="pbox-cat">WebApp</div>
+            <div class="pbox-name">WebApp Kiosk with Mobile</div>
+            <div class="pbox-desc">Designing client-side applications for kiosks</div>
+        </div>
+        <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+
+            <!-- TSURUMARU MOBILE KIOSK -->
+        <div class="pbox web" data-cat="web" data-year="2025">
+    <div class="pbox-carousel">
+        <div class="pbox-slides">
+            <div class="pbox-slide active"><img src="img/portfolio/mtsuru.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/mtsuru1.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/mtsuru2.png" alt="WebApp Kiosk"></div>
+            <div class="pbox-slide"><img src="img/portfolio/mtsuru3.png" alt="WebApp Kiosk"></div>
+        </div>
+        <div class="pbox-dots">
+            <span class="pbox-dot active"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+        </div>
+    </div>
+    <div class="pbox-gallery-group">
+        <a href="img/portfolio/mtsuru.png"  class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 1"></a>
+        <a href="img/portfolio/mtsuru1.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 2"></a>
+        <a href="img/portfolio/mtsuru2.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 3"></a>
+        <a href="img/portfolio/mtsuru3.png" class="gallery-item pbox-gallery-anchor" data-alt="WebApp Kiosk Screen 4"></a>
+    </div>
+    <div class="pbox-info">
+        <div>
+            <div class="pbox-cat">WebApp</div>
+            <div class="pbox-name">Mobile Kiosk App</div>
+            <div class="pbox-desc">Designing client-side applications for kiosks</div>
+        </div>
+        <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+
+            <!-- WYW MOBILE APP -->
+<div class="pbox web" data-cat="web" data-year="2025">
+    <div class="pbox-carousel">
+        <div class="pbox-slides">
+            <div class="pbox-slide active"><img src="img/portfolio/mobile.png" alt="Mobile App"></div>
+            <div class="pbox-slide"><img src="img/portfolio/mobile1.png" alt="Mobile App"></div>
+            <div class="pbox-slide"><img src="img/portfolio/mobile2.png" alt="Mobile App"></div>
+        </div>
+        <div class="pbox-dots">
+            <span class="pbox-dot active"></span>
+            <span class="pbox-dot"></span>
+            <span class="pbox-dot"></span>
+        </div>
+    </div>
+
+    <div class="pbox-gallery-group">
+        <a href="img/portfolio/mobile.png"  class="gallery-item pbox-gallery-anchor" data-alt="Mobile App Screen 1"></a>
+        <a href="img/portfolio/mobile1.png" class="gallery-item pbox-gallery-anchor" data-alt="Mobile App Screen 2"></a>
+        <a href="img/portfolio/mobile2.png" class="gallery-item pbox-gallery-anchor" data-alt="Mobile App Screen 3"></a>
+    </div>
+
+    <div class="pbox-info">
+        <div>
+            <div class="pbox-cat">Mobile App</div>
+            <div class="pbox-name">Ordering App</div>
+            <div class="pbox-desc">Designing client-side applications for mobile ordering</div>
+        </div>
+        <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+            <!-- BURGER POSTER -->
+        <div class="pbox poster" data-cat="poster" data-year="2025">
+    <div class="pbox-carousel">
+        <div class="pbox-slides">
+            <div class="pbox-slide active"><img src="img/portfolio/poster.png" alt="Web Based Menu Board"></div>
+            <div class="pbox-slide"><img src="img/portfolio/poster1.png" alt="Web Based Menu Board"></div>
+        </div>
+        <div class="pbox-dots">
+            <span class="pbox-dot active"></span>
+            <span class="pbox-dot"></span>
+        </div>
+    </div>
+    <div class="pbox-gallery-group">
+        <a href="img/portfolio/poster.png"  class="gallery-item pbox-gallery-anchor" data-alt="Poster 1"></a>
+        <a href="img/portfolio/poster1.png" class="gallery-item pbox-gallery-anchor" data-alt="Poster 2"></a>
+    </div>
+    <div class="pbox-info">
+        <div>
+            <div class="pbox-cat">Menu Board</div>
+            <div class="pbox-name">Web Based Menu Board</div>
+            <div class="pbox-desc">Exploring designs for the webapp</div>
+        </div>
+        <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+            <!-- WINGS POSTER -->
+        <div class="pbox poster" data-cat="poster" data-year="2025">
+    <div class="pbox-carousel">
+        <div class="pbox-slides">
+            <div class="pbox-slide active"><img src="img/portfolio/poster2.png" alt="Web Based Menu Board"></div>
+            <div class="pbox-slide"><img src="img/portfolio/poster3.png" alt="Web Based Menu Board"></div>
+        </div>
+        <div class="pbox-dots">
+            <span class="pbox-dot active"></span>
+            <span class="pbox-dot"></span>
+        </div>
+    </div>
+    <div class="pbox-gallery-group">
+        <a href="img/portfolio/poster2.png"  class="gallery-item pbox-gallery-anchor" data-alt="Web Based Menu Board"></a>
+        <a href="img/portfolio/poster3.png" class="gallery-item pbox-gallery-anchor" data-alt="Web Based Menu Board"></a>
+    </div>
+    <div class="pbox-info">
+        <div>
+            <div class="pbox-cat">Menu Board</div>
+            <div class="pbox-name">Web Based Menu Board</div>
+            <div class="pbox-desc">Exploring designs for the webapp</div>
+        </div>
+        <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+            <!-- MEMSHIP POSTER -->
+        <div class="pbox poster" data-cat="poster" data-year="2024">
+                <div class="pbox-img"><img src="img/portfolio/poster4.png" alt="PUBMAT"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">PUBMAT</div>
+                        <div class="pbox-name">Membership Drive</div>
+                        <div class="pbox-desc">A poster used from our organization</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/poster4.png"  class="gallery-item pbox-gallery-anchor" data-alt="Membership Drive"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- KIOSK IDLE -->
+        <div class="pbox poster" data-cat="poster" data-year="2025">
+                <div class="pbox-img"><img src="img/portfolio/poster5.gif" alt="Kiosk GIF"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">GIF</div>
+                        <div class="pbox-name">Kiosk GIF</div>
+                        <div class="pbox-desc">Used in the kiosk display for client presentations</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/poster5.gif"  class="gallery-item pbox-gallery-anchor" data-alt="Kiosk GIF"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+             <!-- JENGA PUBMAT -->
+        <div class="pbox poster" data-cat="poster" data-year="2023">
+                <div class="pbox-carousel">
+                    <div class="pbox-slides">
+                        <div class="pbox-slide active"><img src="img/portfolio/poster7.jpeg" alt="Fan Project"></div>
+                        <div class="pbox-slide"><img src="img/portfolio/poster6.jpeg" alt="Fan Project"></div>
+                    </div>
+                    <div class="pbox-dots">
+                        <span class="pbox-dot active"></span>
+                        <span class="pbox-dot"></span>
+                    </div>
+                </div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">PUBMAT</div>
+                        <div class="pbox-name">Fan Project</div>
+                        <div class="pbox-desc">NCT Dream's Jenga line concert banner</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/poster6.jpeg"  class="gallery-item pbox-gallery-anchor" data-alt="Fan Project"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- FAN PROJECT -->
+        <div class="pbox poster" data-cat="poster" data-year="2023">
+                <div class="pbox-carousel">
+                    <div class="pbox-slides">
+                        <div class="pbox-slide active"><img src="img/portfolio/poster8.jpeg" alt="Fan Project"></div>
+                        <div class="pbox-slide"><img src="img/portfolio/poster9.jpeg" alt="Fan Project"></div>
+                    </div>
+                    <div class="pbox-dots">
+                        <span class="pbox-dot active"></span>
+                        <span class="pbox-dot"></span>
+                    </div>
+                </div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">PUBMAT</div>
+                        <div class="pbox-name">Fan Project</div>
+                        <div class="pbox-desc">NCT Dream's Sorry Heart line concert banner</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/poster8.jpeg"  class="gallery-item pbox-gallery-anchor" data-alt="Fan Project"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- ORGANIZATIONAL POSTER -->
+        <div class="pbox poster" data-cat="poster" data-year="2024">
+                <div class="pbox-img"><img src="img/portfolio/poster10.png" alt="POSTER"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">POSTER</div>
+                        <div class="pbox-name">Organizational Poster</div>
+                        <div class="pbox-desc">General Assembly poster</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/poster10.png"  class="gallery-item pbox-gallery-anchor" data-alt="Organizational Poster"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- CHENJI POSTER -->
+        <div class="pbox poster" data-cat="poster" data-year="2022">
+                <div class="pbox-img"><img src="img/portfolio/poster11.png" alt="Chenji"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">Graphics</div>
+                        <div class="pbox-name">Chenji</div>
+                        <div class="pbox-desc">Chenji's poster design</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/poster11.png"  class="gallery-item pbox-gallery-anchor" data-alt="Chenji"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- ONE PAGER -->
+        <div class="pbox poster" data-cat="portfolio" data-year="2026">
+                <div class="pbox-img"><img src="img/portfolio/portfolio.png" alt="One Pager"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">portfolio</div>
+                        <div class="pbox-name">One Pager</div>
+                        <div class="pbox-desc">Designing my own Portfolio</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/portfolio.png"  class="gallery-item pbox-gallery-anchor" data-alt="One Pager"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- BINDER POSTER -->
+        <div class="pbox poster" data-cat="poster" data-year="2022">
+                <div class="pbox-img"><img src="img/portfolio/poster13.png" alt="Binder Poster"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">POSTER</div>
+                        <div class="pbox-name">Binder Poster</div>
+                        <div class="pbox-desc">Indulge in monochromatic crafted posters</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/poster13.png"  class="gallery-item pbox-gallery-anchor" data-alt="Binder Poster"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+            <!-- BRIAHNNA LOGO -->
+        <div class="pbox logo" data-cat="logo" data-year="2024">
+                <div class="pbox-img"><img src="img/portfolio/logo.png" alt="Branding"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">logo</div>
+                        <div class="pbox-name">Briahna's Airbnb Branding</div>
+                        <div class="pbox-desc">Brand identity design for StayCation</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/logo.png"  class="gallery-item pbox-gallery-anchor" data-alt="Briahna's Airbnb Branding"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- ADS BANNER -->
+        <div class="pbox banner" data-cat="banner" data-year="2025">
+                <div class="pbox-img"><img src="img/portfolio/banner.png" alt="Ads Banner"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">Banner</div>
+                        <div class="pbox-name">Ads Banner</div>
+                        <div class="pbox-desc">Eye-catching banner for client presentation</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/banner.png"  class="gallery-item pbox-gallery-anchor" data-alt="Ads Banner"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <!-- STREAM BANNER -->
+        <div class="pbox banner" data-cat="banner" data-year="2024">
+                <div class="pbox-img"><img src="img/portfolio/banner1.png" alt="Stream Banner"></div>
+                <div class="pbox-info">
+                    <div>
+                        <div class="pbox-cat">Banner</div>
+                        <div class="pbox-name">Stream Banner</div>
+                        <div class="pbox-desc">Used for game streaming platform promotion</div>
+                    </div>
+                    <div class="pbox-gallery-group">
+                <a href="img/portfolio/banner1.png"  class="gallery-item pbox-gallery-anchor" data-alt="Stream Banner"></a>
+                    </div>
+                    <button class="pbox-link pbox-explore-btn">Explore <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- ========== LOAD MORE ========== -->
+        <div class="load-more-wrap" id="loadMoreWrap">
+            <button class="load-more-btn" id="loadMoreBtn">
+                Load more <span class="load-more-count" id="loadMoreCount"></span>
+            </button>
+            <button class="load-less-btn" id="loadLessBtn" style="display:none">
+                Show less <span class="load-more-count">↑</span>
+            </button>
+            <div class="load-more-note" id="loadMoreNote"></div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+        <div class="section-head centered">
+            <div class="section-label">Get in touch</div>
+            <h2 class="section-title">Contact <em>Me</em></h2>
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- Card -->
+            <div class="contact-card" id="contactCard">
+                <div class="cc-avatar">
+                    <img src="./img/toni.jpeg" alt="TS">
+                </div>
+                <div class="cc-name">Toni Sy</div>
+                <div class="cc-role">PH · Software Engineer</div>
+                <div class="cc-divider"></div>
+                <div class="cc-tags">
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">Web Dev</span>
+                    <span class="tag">Branding</span>
+                    <span class="tag">Canva</span>
+                    <span class="tag">Adobe</span>
+                    <span class="tag">Graphic Design</span>
+                </div>
+                <div class="cc-divider"></div>
+                <div class="cc-links">
+                    <div class="cc-link"><i class='bx bx-envelope'></i><span>tonisandra.sy2003@gmail.com</span></div>
+                    <div class="cc-link"><i class='bx bx-map'></i><span>General Trias, Cavite PH</span></div>
+                    <div class="cc-link"><i class='bx bxl-linkedin'></i><span>linkedin.com/in/toniyszh</span></div>
+                </div>
+                <div class="cc-divider"></div>
+                <div class="cc-status"><span class="pill-dot" style="background:#3d6b45"></span><span>Available now</span></div>
+                <div class="cc-stats">
+                    <div class="cc-stat"><div class="cc-stat-val">1+</div><div class="cc-stat-key">Years</div></div>
+                    <div class="cc-stat-div"></div>
+                    <div class="cc-stat"><div class="cc-stat-val">20+</div><div class="cc-stat-key">Projects</div></div>
+                    <div class="cc-stat-div"></div>
+                    <div class="cc-stat"><div class="cc-stat-val">4</div><div class="cc-stat-key">Skills</div></div>
+                </div>
+            </div>
+            <!-- Business card modal -->
+<div class="biz-overlay" id="bizOverlay">
+  <!-- SVG gradient for icon strokes -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="biz-accent-gradient">
+        <stop offset="0%" stop-color="#f4c0d1" />
+        <stop offset="100%" stop-color="#c4a882" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="biz-card" id="bizCard">
+    <div class="biz-color-splash"></div>
+
+    <div class="biz-name-block">
+      <div class="biz-name-line"><span>Toni</span><span>Sandra Sy</span></div>
+      <div class="biz-role">Jr. Software Engineer</div>
+    </div>
+
+    <div class="biz-divider"></div>
+    <div class="biz-accent-dot"></div>
+
+    <div class="biz-info-new">
+      <div class="biz-item">
+        <svg class="biz-icon" viewBox="0 0 24 24">
+          <path d="M4 6h16v12H4z"/><path d="M4 6l8 7 8-7"/>
+        </svg>
+        <span>tonisandra.sy2003@gmail.com</span>
+      </div>
+      <div class="biz-item">
+        <svg class="biz-icon" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3 3 15 0 18"/>
+        </svg>
+        <span>linkedin.com/in/toniyszh</span>
+      </div>
+      <div class="biz-item">
+        <svg class="biz-icon" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        <span>General Trias, Cavite PH</span>
+      </div>
+    </div>
+
+    <div class="biz-watermark">TS</div>
+  </div>
+</div>
+
+            <!-- Form -->
+            <div class="contact-form-wrap">
+         <form action="https://formspree.io/f/mwvagaey" method="POST">
+    <div class="form-row">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="First Name" placeholder="e.g. Toni" required>
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="Last Name" placeholder="e.g. Sy" required>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="Email" placeholder="your@email.com" required>
+    </div>
+    
+    <div class="form-group">
+        <label>Subject</label>
+        <input type="text" name="Subject" placeholder="Project inquiry">
+    </div>
+    
+    <div class="form-group">
+        <label>Message</label>
+        <textarea name="Message" rows="6" placeholder="Tell me about your project..." required></textarea>
+    </div>
+    
+    <button type="submit" class="btn-dark" style="width:100%;justify-content:center;cursor:pointer;border:none;">
+        Send Message
+    </button>
+</form>
+            </div>
+
+            <!-- Skills circles -->
+            <div class="skills-wrap">
+                <div class="eyebrow" style="margin-bottom:1.2rem;text-align:center">OTHER TECHTOOLS</div>
+                <div class="skills-circles">
+                    <div class="skill-circle">
+                        <div class="sc-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="sc-bg"/>
+                                <circle cx="60" cy="60" r="50" class="sc-fill" style="--pct:90"/>
+                            </svg>
+                            <div class="sc-label">90%</div>
+                        </div>
+                        <div class="sc-name">Arduino IDE</div>
+                    </div>
+                    <div class="skill-circle">
+                        <div class="sc-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="sc-bg"/>
+                                <circle cx="60" cy="60" r="50" class="sc-fill" style="--pct:80"/>
+                            </svg>
+                            <div class="sc-label">80%</div>
+                        </div>
+                        <div class="sc-name">ESP32</div>
+                    </div>
+                    <div class="skill-circle">
+                        <div class="sc-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="sc-bg"/>
+                                <circle cx="60" cy="60" r="50" class="sc-fill" style="--pct:80"/>
+                            </svg>
+                            <div class="sc-label">80%</div>
+                        </div>
+                        <div class="sc-name">Cisco PT</div>
+                    </div>
+                    <div class="skill-circle">
+                        <div class="sc-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="sc-bg"/>
+                                <circle cx="60" cy="60" r="50" class="sc-fill" style="--pct:85"/>
+                            </svg>
+                            <div class="sc-label">85%</div>
+                        </div>
+                        <div class="sc-name">ClaudeAI</div>
+                    </div>
+                    <div class="skill-circle">
+                        <div class="sc-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="sc-bg"/>
+                                <circle cx="60" cy="60" r="50" class="sc-fill" style="--pct:60"/>
+                            </svg>
+                            <div class="sc-label">60%</div>
+                        </div>
+                        <div class="sc-name">Git/Github</div>
+                    </div>
+                    <div class="skill-circle">
+                        <div class="sc-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="sc-bg"/>
+                                <circle cx="60" cy="60" r="50" class="sc-fill" style="--pct:50"/>
+                            </svg>
+                            <div class="sc-label">50%</div>
+                        </div>
+                        <div class="sc-name">Flutter</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-logo">Toni <em>Sandra</em> Sy</div>
+            <div class="palette-strip">
+                <div class="ps" style="background:#f4c0d1"></div>
+                <div class="ps" style="background:#e8c8b8"></div>
+                <div class="ps" style="background:#f0ebe0"></div>
+                <div class="ps" style="background:#c4a882"></div>
+                <div class="ps" style="background:#8c6d4f"></div>
+                <div class="ps" style="background:#2b2018"></div>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/tuo.yszh/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/toniyszh"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/hanjeeez"><i class='bx bxl-facebook'></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">© 2026 Toni Sandra Sy · General Trias, Cavite PH</div>
+    </footer>
+
+    <!-- scroll to top -->
+    <div id="scroll-top"><i class='bx bxs-chevrons-up'></i></div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
