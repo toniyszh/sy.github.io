@@ -1360,7 +1360,7 @@ html.dark .footer-logo { color: var(--drose); }
     box-shadow: 0 8px 24px rgba(29,10,18,0.1);
   }
   html.dark .navlist { background: rgba(26,16,20,0.97); }
-  .navlist.open { transform: translateY(0); }
+  .navlist.open { transform: translateY(0); position: fixed;}
   .navlist li a { padding: 12px 6%; font-size: 15px; border-radius: 0; }
   .menu-icon { display: flex; }
 
