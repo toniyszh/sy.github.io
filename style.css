@@ -1346,7 +1346,6 @@ html.dark .footer-logo { color: var(--drose); }
   /* ── HEADER ── */
   header { padding: 0 5%; }
   .navlist {
-    position: fixed;
     top: var(--header-h); left: 0; right: 0;
     background: rgba(253,250,247,0.97);
     backdrop-filter: blur(20px);
