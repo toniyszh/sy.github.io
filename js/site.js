@@ -559,6 +559,38 @@ document.getElementById('bizOverlay').addEventListener('click', (e) => {
   if (e.target === e.currentTarget) closeBizCard();
 });
 
+/* ── CONTACT FORM ── */
+const contactForm = document.getElementById('contactForm');
+const contactSubmit = document.getElementById('contactSubmit');
+const contactFormStatus = document.getElementById('contactFormStatus');
+
+contactForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  contactSubmit.disabled = true;
+  contactSubmit.textContent = 'Sending…';
+  contactFormStatus.textContent = '';
+  contactFormStatus.classList.remove('error');
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { Accept: 'application/json' }
+    });
+
+    if (!response.ok) throw new Error('Formspree rejected the submission.');
+
+    contactForm.reset();
+    contactFormStatus.textContent = 'Thanks! Your message has been sent.';
+  } catch (error) {
+    contactFormStatus.textContent = 'Your message could not be sent. Please try again or email me directly.';
+    contactFormStatus.classList.add('error');
+  } finally {
+    contactSubmit.disabled = false;
+    contactSubmit.textContent = 'Send Message';
+  }
+});
+
 /* ── CUSTOM CURSOR ── */
   const dot  = document.getElementById('cursorDot');
   const ring = document.getElementById('cursorRing');
