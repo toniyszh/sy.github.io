@@ -1,4 +1,4 @@
-/* ── TYPEWRITER ── */
+ /* ── TYPEWRITER ── */
 const typeTarget = document.getElementById('typeTarget');
 const phrases = [
     'Graphic Designer',
